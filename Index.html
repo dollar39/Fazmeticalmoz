@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transforma o Teu Telemóvel numa Máquina de Fazer Dinheiro</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #FF8C00, #FF4500);
+        margin: 0;
+        padding: 0;
+        color: white;
+        line-height: 1.6;
+    }
+    header {
+        padding: 30px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2.2em;
+        margin-bottom: 10px;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    section {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+    .highlight {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .price {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 15px 0;
+        color: #FFD700;
+    }
+    .payment {
+        text-align: center;
+        margin: 30px 0;
+    }
+    .payment img {
+        max-width: 300px;
+        border-radius: 8px;
+    }
+    .file-upload {
+        text-align: center;
+        margin: 20px 0;
+    }
+    input[type="file"] {
+        padding: 10px;
+        background: white;
+        color: black;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn {
+        display: inline-block;
+        background: #25D366;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        opacity: 0.5;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    .btn.enabled {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0,0,0,0.3);
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Transforma o Teu Telemóvel numa Máquina de Fazer Dinheiro</h1>
+    <p>Aprende passo a passo como gerar rendimento usando apenas o teu telemóvel, em Moçambique.</p>
+</header>
+
+<section>
+    <div class="highlight">
+        <h2>Oportunidade Única</h2>
+        <p>Já imaginaste ganhar dinheiro todos os dias sem sair de casa? Este curso foi criado especialmente para pessoas como tu, que querem transformar o telemóvel numa verdadeira ferramenta de trabalho. Não precisas de computador nem de grandes investimentos.</p>
+    </div>
+
+    <div class="highlight">
+        <h2>O que vais aprender</h2>
+        <ul>
+            <li>Como criar fontes de rendimento online usando apenas o telemóvel</li>
+            <li>Aplicações e plataformas que realmente pagam em Moçambique</li>
+            <li>Estratégias para vender e receber pagamentos no país</li>
+            <li>Dicas para automatizar e poupar tempo</li>
+        </ul>
+    </div>
+
+    <div class="highlight">
+        <h2>Investimento</h2>
+        <p class="price">Por apenas 399,00 MZN</p>
+        <p>Um valor simbólico para aprender algo que pode mudar a tua vida. Pensa bem: o que são 399 meticais comparado com a possibilidade de gerar rendimento todos os meses?</p>
+    </div>
+
+    <div class="payment">
+        <h2>Pagamento via e-Mola</h2>
+        <p>Faz o pagamento para o número abaixo via <strong>e-Mola</strong> e guarda o comprovativo:</p>
+        <p style="font-size: 1.4em; font-weight: bold;">87 720 4494</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Movitel_logo.png/320px-Movitel_logo.png" alt="Pagamento e-Mola">
+    </div>
+
+    <div class="file-upload">
+        <p><strong>Envia o teu comprovativo (screenshot) para desbloquear o botão:</strong></p>
+        <input type="file" id="screenshot" accept="image/*">
+    </div>
+
+    <div style="text-align: center;">
+        <a id="whatsappBtn" class="btn" href="https://wa.me/SEU_NUMERO_AQUI?text=Ol%C3%A1,%20j%C3%A1%20fiz%20o%20pagamento%20do%20curso" target="_blank">
+            💬 Confirmar Pagamento no WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Curso Mobile Money Moçambique. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    const fileInput = document.getElementById('screenshot');
+    const whatsappBtn = document.getElementById('whatsappBtn');
+
+    fileInput.addEventListener('change', function() {
+        if (fileInput.files.length > 0) {
+            whatsappBtn.classList.add('enabled');
+        } else {
+            whatsappBtn.classList.remove('enabled');
+        }
+    });
+</script>
+
+</body>
+</html>
